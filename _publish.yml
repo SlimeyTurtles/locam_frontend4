@@ -1,0 +1,4 @@
+- source: locam_frontend4.qmd
+  quarto-pub:
+    - id: 32effbf2-4d20-4617-b2fc-95c79c331046
+      url: 'https://quartopub.com/sites/slimeyturtles/locam_frontend4'
