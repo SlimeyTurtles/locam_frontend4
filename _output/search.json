@@ -1,10 +1,10 @@
 [
   {
-    "objectID": "map.html",
-    "href": "map.html",
+    "objectID": "newLogin.html",
+    "href": "newLogin.html",
     "title": "Locam",
     "section": "",
-    "text": "Interactive Map\n\n\n\n\n\n\n\nInteractive Map"
+    "text": "<!DOCTYPE HTML> \n\n\n\n\nLogin\n\n\n\n\n<div class=\"container py-4\">\n    <header class=\"pb-3 mb-4 border-bottom border-primary text-dark\">\n        <span class=\"fs-4\">Login Page</span>\n    </header>\n</div>\n\n<div class=\"container py-4 text-light bg-success\">\n\n    <div class=\"container bg-secondary py-4\">\n        <div class=\"p-5 mb-4 bg-light text-dark rounded-3\">\n            <h1>Login</h1>\n            <label for=\"email\">Username:</label><br>\n            <input type=\"text\" id=\"username\" name=\"username\"><br>\n            <label for=\"password\">Password:</label><br>\n            <input type=\"text\" id=\"password\" name=\"password\"><br><br>\n            <input type=\"submit\" value=\"Login\" onclick=\"login()\">\n            <p id=\"message\"></p>\n        </div>\n    </div>\n\n    <a href=\"http://locam.nighthawkcodingsociety.com:8085/mvc/person/create/\"> Sign up </a>\n\n    <script>\n        function login() {\n            var email = document.getElementById('username').value;\n            var password = document.getElementById('password').value;\n            var data = {email:email, password:password};\n            fetch(\"/authenticate\", {method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify(data)}).then((data) => {\n                if (data.status == 200) {\n                    window.location.replace(\"/mvc/person/read\");\n                } else {\n                    document.getElementById('message').innerHTML = \"Invalid email or password\"\n                }\n            });\n        }\n    </script>\n\n</div>"
   },
   {
     "objectID": "read.html",
@@ -14,46 +14,11 @@
     "text": "<!DOCTYPE HTML> \n\n\n\n<title>Person List</title>\n\n\n\n\n\n    <!-- Page specific body additions -->\n    <header class=\"pb-3 mb-4 border-bottom\">\n        <a href=\"#\" class=\"d-flex align-items-center text-light text-decoration-none\">\n            <span class=\"fs-4\">Database SQL Person</span>\n        </a>\n    </header>\n\n    <div class=\"container py-4 text-light bg-success\">\n\n        <h2>Person Viewer</h2>\n        <a th:href=\"@{/mvc/person/create/}\">Create Person</a>\n        <div class=\"row align-items-md-stretch\">\n            <table class=\"table\">\n                <thead>\n                <tr>\n                    <th>ID</th>\n                    <th>User ID</th>\n                    <th>Person</th>\n                    <th>Age</th>\n                    <th>Action</th>\n                </tr>\n                </thead>\n                <tbody>\n                <tr th:each=\"person : ${list}\">\n                    <td th:text=\"${person.id}\">Person ID</td>\n                    <td th:text=\"${person.email}\">Birth Date</td>\n                    <td th:text=\"${person.name}\">Name</td>\n                    <td th:if=\"${person.getAge() != -1}\" th:text=\"${person.getAge()}\">Age</td>\n                    <td th:unless=\"${person.getAge() != -1}\" th:text=\"Unknown\">Unknown Age</td>\n                    <td>\n                        <!--- <a th:href=\"@{/mvc/notes/{id}(id = ${person.id})}\">Notes</a> -->\n                        <a th:href=\"@{/mvc/person/update/{id}(id = ${person.id})}\">Update</a>\n                        <a th:href=\"@{/mvc/person/delete/{id}(id = ${person.id})}\">Delete</a>\n                    </td>\n                </tr>\n                </tbody>\n            </table>\n        </div>\n\n    </div>\n</div>"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "index",
-    "section": "",
-    "text": "welcome to locam\n\ngo to the login screen"
-  },
-  {
-    "objectID": "newLogin.html",
-    "href": "newLogin.html",
-    "title": "Locam",
-    "section": "",
-    "text": "<!DOCTYPE HTML> \n\n\n\n\nLogin\n\n\n\n\n<div class=\"container py-4\">\n    <header class=\"pb-3 mb-4 border-bottom border-primary text-dark\">\n        <span class=\"fs-4\">Login Page</span>\n    </header>\n</div>\n\n<div class=\"container py-4 text-light bg-success\">\n\n    <div class=\"container bg-secondary py-4\">\n        <div class=\"p-5 mb-4 bg-light text-dark rounded-3\">\n            <h1>Login</h1>\n            <label for=\"email\">Username:</label><br>\n            <input type=\"text\" id=\"username\" name=\"username\"><br>\n            <label for=\"password\">Password:</label><br>\n            <input type=\"text\" id=\"password\" name=\"password\"><br><br>\n            <input type=\"submit\" value=\"Login\" onclick=\"login()\">\n            <p id=\"message\"></p>\n        </div>\n    </div>\n\n    <a href=\"http://locam.nighthawkcodingsociety.com:8085/mvc/person/create/\"> Sign up </a>\n\n    <script>\n        function login() {\n            var email = document.getElementById('username').value;\n            var password = document.getElementById('password').value;\n            var data = {email:email, password:password};\n            fetch(\"/authenticate\", {method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify(data)}).then((data) => {\n                if (data.status == 200) {\n                    window.location.replace(\"/mvc/person/read\");\n                } else {\n                    document.getElementById('message').innerHTML = \"Invalid email or password\"\n                }\n            });\n        }\n    </script>\n\n</div>"
-  },
-  {
     "objectID": "map.html",
     "href": "map.html",
     "title": "Locam",
     "section": "",
     "text": "Interactive Map\n\n\n\n\n\n\n\nInteractive Map"
-  },
-  {
-    "objectID": "read.html",
-    "href": "read.html",
-    "title": "Locam",
-    "section": "",
-    "text": "<!DOCTYPE HTML> \n\n\n\n<title>Person List</title>\n\n\n\n\n\n    <!-- Page specific body additions -->\n    <header class=\"pb-3 mb-4 border-bottom\">\n        <a href=\"#\" class=\"d-flex align-items-center text-light text-decoration-none\">\n            <span class=\"fs-4\">Database SQL Person</span>\n        </a>\n    </header>\n\n    <div class=\"container py-4 text-light bg-success\">\n\n        <h2>Person Viewer</h2>\n        <a th:href=\"@{/mvc/person/create/}\">Create Person</a>\n        <div class=\"row align-items-md-stretch\">\n            <table class=\"table\">\n                <thead>\n                <tr>\n                    <th>ID</th>\n                    <th>User ID</th>\n                    <th>Person</th>\n                    <th>Age</th>\n                    <th>Action</th>\n                </tr>\n                </thead>\n                <tbody>\n                <tr th:each=\"person : ${list}\">\n                    <td th:text=\"${person.id}\">Person ID</td>\n                    <td th:text=\"${person.email}\">Birth Date</td>\n                    <td th:text=\"${person.name}\">Name</td>\n                    <td th:if=\"${person.getAge() != -1}\" th:text=\"${person.getAge()}\">Age</td>\n                    <td th:unless=\"${person.getAge() != -1}\" th:text=\"Unknown\">Unknown Age</td>\n                    <td>\n                        <!--- <a th:href=\"@{/mvc/notes/{id}(id = ${person.id})}\">Notes</a> -->\n                        <a th:href=\"@{/mvc/person/update/{id}(id = ${person.id})}\">Update</a>\n                        <a th:href=\"@{/mvc/person/delete/{id}(id = ${person.id})}\">Delete</a>\n                    </td>\n                </tr>\n                </tbody>\n            </table>\n        </div>\n\n    </div>\n</div>"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "index",
-    "section": "",
-    "text": "welcome to locam\n\ngo to the login screen"
-  },
-  {
-    "objectID": "newLogin.html",
-    "href": "newLogin.html",
-    "title": "Locam",
-    "section": "",
-    "text": "<!DOCTYPE HTML> \n\n\n\n\nLogin\n\n\n\n\n<div class=\"container py-4\">\n    <header class=\"pb-3 mb-4 border-bottom border-primary text-dark\">\n        <span class=\"fs-4\">Login Page</span>\n    </header>\n</div>\n\n<div class=\"container py-4 text-light bg-success\">\n\n    <div class=\"container bg-secondary py-4\">\n        <div class=\"p-5 mb-4 bg-light text-dark rounded-3\">\n            <h1>Login</h1>\n            <label for=\"email\">Username:</label><br>\n            <input type=\"text\" id=\"username\" name=\"username\"><br>\n            <label for=\"password\">Password:</label><br>\n            <input type=\"text\" id=\"password\" name=\"password\"><br><br>\n            <input type=\"submit\" value=\"Login\" onclick=\"login()\">\n            <p id=\"message\"></p>\n        </div>\n    </div>\n\n    <a href=\"http://locam.nighthawkcodingsociety.com:8085/mvc/person/create/\"> Sign up </a>\n\n    <script>\n        function login() {\n            var email = document.getElementById('username').value;\n            var password = document.getElementById('password').value;\n            var data = {email:email, password:password};\n            fetch(\"/authenticate\", {method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify(data)}).then((data) => {\n                if (data.status == 200) {\n                    window.location.replace(\"/mvc/person/read\");\n                } else {\n                    document.getElementById('message').innerHTML = \"Invalid email or password\"\n                }\n            });\n        }\n    </script>\n\n</div>"
   },
   {
     "objectID": "login.html",
@@ -61,5 +26,12 @@
     "title": "login",
     "section": "",
     "text": "User ID:  \n\n\n Password:  \n\n\n\nLogin"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "index",
+    "section": "",
+    "text": "welcome to locam\n\ngo to the login screen"
   }
 ]
