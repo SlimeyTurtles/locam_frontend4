@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en" xmlns:layout="http://www.w3.org/1999/xhtml" xmlns:th="http://www.w3.org/1999/xhtml" layout:decorate="~{layouts/base}"><head>
 
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.2.335">
@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Locam - index</title>
+<title>Locam – newlogin</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -79,7 +79,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page">
+    <a class="nav-link" href="./index.html">
  <span class="menu-text">home</span></a>
   </li>  
   <li class="nav-item">
@@ -115,27 +115,59 @@ ul.task-list li input[type="checkbox"] {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">index</h1>
-</div>
 
 
+<!-- This page is illustrative and contains ideas about HTML formatting -->
+&lt;!DOCTYPE HTML&gt; <!-- Signals to the Layout Dialect which layout should be used to decorate this View -->
 
-<div class="quarto-title-meta">
 
-    
-  
-    
-  </div>
-  
+<!-- Page specific head additions -->
+<title>
+Login
+</title>
 
-</header>
 
-<p>
-welcome to locam
-</p>
-<p>go to the login screen</p>
+<p><th:block layout:fragment="body" th:remove="tag"></th:block></p>
+<pre><code>&lt;div class="container py-4"&gt;
+    &lt;header class="pb-3 mb-4 border-bottom border-primary text-dark"&gt;
+        &lt;span class="fs-4"&gt;Login Page&lt;/span&gt;
+    &lt;/header&gt;
+&lt;/div&gt;
+
+&lt;div class="container py-4 text-light bg-success"&gt;
+
+    &lt;div class="container bg-secondary py-4"&gt;
+        &lt;div class="p-5 mb-4 bg-light text-dark rounded-3"&gt;
+            &lt;h1&gt;Login&lt;/h1&gt;
+            &lt;label for="email"&gt;Username:&lt;/label&gt;&lt;br&gt;
+            &lt;input type="text" id="username" name="username"&gt;&lt;br&gt;
+            &lt;label for="password"&gt;Password:&lt;/label&gt;&lt;br&gt;
+            &lt;input type="text" id="password" name="password"&gt;&lt;br&gt;&lt;br&gt;
+            &lt;input type="submit" value="Login" onclick="login()"&gt;
+            &lt;p id="message"&gt;&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;a href="http://locam.nighthawkcodingsociety.com:8085/mvc/person/create/"&gt; Sign up &lt;/a&gt;
+
+    &lt;script&gt;
+        function login() {
+            var email = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+            var data = {email:email, password:password};
+            fetch("/authenticate", {method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify(data)}).then((data) =&gt; {
+                if (data.status == 200) {
+                    window.location.replace("/mvc/person/read");
+                } else {
+                    document.getElementById('message').innerHTML = "Invalid email or password"
+                }
+            });
+        }
+    &lt;/script&gt;
+
+&lt;/div&gt;</code></pre>
+
+
 
 
 

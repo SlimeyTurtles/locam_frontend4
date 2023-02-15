@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en" xmlns:layout="http://www.w3.org/1999/xhtml" xmlns:th="http://www.w3.org/1999/xhtml" layout:decorate="~{layouts/base}"><head>
 
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.2.335">
@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Locam - index</title>
+<title>Locam – read</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -79,7 +79,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page">
+    <a class="nav-link" href="./index.html">
  <span class="menu-text">home</span></a>
   </li>  
   <li class="nav-item">
@@ -115,31 +115,67 @@ ul.task-list li input[type="checkbox"] {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">index</h1>
-</div>
+
+
+<!-- This page is illustrative and contains ideas about HTML formatting -->
+&lt;!DOCTYPE HTML&gt; <!-- Signals to the Layout Dialect which layout should be used to decorate this View -->
+
+
+<!-- Page specific head additions -->
+<pre><code>&lt;title&gt;Person List&lt;/title&gt;</code></pre>
+
+<!-- <body> -->
+
+<th:block layout:fragment="body" th:remove="tag">
+<div class="container py-4 bg-primary">
+<pre><code>    &lt;!-- Page specific body additions --&gt;
+    &lt;header class="pb-3 mb-4 border-bottom"&gt;
+        &lt;a href="#" class="d-flex align-items-center text-light text-decoration-none"&gt;
+            &lt;span class="fs-4"&gt;Database SQL Person&lt;/span&gt;
+        &lt;/a&gt;
+    &lt;/header&gt;
+
+    &lt;div class="container py-4 text-light bg-success"&gt;
+
+        &lt;h2&gt;Person Viewer&lt;/h2&gt;
+        &lt;a th:href="@{/mvc/person/create/}"&gt;Create Person&lt;/a&gt;
+        &lt;div class="row align-items-md-stretch"&gt;
+            &lt;table class="table"&gt;
+                &lt;thead&gt;
+                &lt;tr&gt;
+                    &lt;th&gt;ID&lt;/th&gt;
+                    &lt;th&gt;User ID&lt;/th&gt;
+                    &lt;th&gt;Person&lt;/th&gt;
+                    &lt;th&gt;Age&lt;/th&gt;
+                    &lt;th&gt;Action&lt;/th&gt;
+                &lt;/tr&gt;
+                &lt;/thead&gt;
+                &lt;tbody&gt;
+                &lt;tr th:each="person : ${list}"&gt;
+                    &lt;td th:text="${person.id}"&gt;Person ID&lt;/td&gt;
+                    &lt;td th:text="${person.email}"&gt;Birth Date&lt;/td&gt;
+                    &lt;td th:text="${person.name}"&gt;Name&lt;/td&gt;
+                    &lt;td th:if="${person.getAge() != -1}" th:text="${person.getAge()}"&gt;Age&lt;/td&gt;
+                    &lt;td th:unless="${person.getAge() != -1}" th:text="Unknown"&gt;Unknown Age&lt;/td&gt;
+                    &lt;td&gt;
+                        &lt;!--- &lt;a th:href="@{/mvc/notes/{id}(id = ${person.id})}"&gt;Notes&lt;/a&gt; --&gt;
+                        &lt;a th:href="@{/mvc/person/update/{id}(id = ${person.id})}"&gt;Update&lt;/a&gt;
+                        &lt;a th:href="@{/mvc/person/delete/{id}(id = ${person.id})}"&gt;Delete&lt;/a&gt;
+                    &lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;/tbody&gt;
+            &lt;/table&gt;
+        &lt;/div&gt;
+
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
 
 
 
-<div class="quarto-title-meta">
-
-    
-  
-    
-  </div>
-  
-
-</header>
-
-<p>
-welcome to locam
-</p>
-<p>go to the login screen</p>
 
 
 
-</main> <!-- /main -->
+</div></th:block></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

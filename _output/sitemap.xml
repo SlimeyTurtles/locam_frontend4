@@ -1,11 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://quartopub.com/sites/slimeyturtles/locam/login.html</loc>
-    <lastmod>2023-02-15T18:52:16.160Z</lastmod>
+    <loc>https://quartopub.com/sites/slimeyturtles/locam/map.html</loc>
+    <lastmod>2023-02-15T19:52:26.568Z</lastmod>
+  </url>
+  <url>
+    <loc>https://quartopub.com/sites/slimeyturtles/locam/read.html</loc>
+    <lastmod>2023-02-15T19:52:26.918Z</lastmod>
+  </url>
+  <url>
+    <loc>https://quartopub.com/sites/slimeyturtles/locam/friends.html</loc>
+    <lastmod>2023-02-15T19:52:27.258Z</lastmod>
   </url>
   <url>
     <loc>https://quartopub.com/sites/slimeyturtles/locam/index.html</loc>
-    <lastmod>2023-02-15T18:52:16.476Z</lastmod>
+    <lastmod>2023-02-15T19:52:27.588Z</lastmod>
+  </url>
+  <url>
+    <loc>https://quartopub.com/sites/slimeyturtles/locam/newLogin.html</loc>
+    <lastmod>2023-02-15T19:52:28.058Z</lastmod>
+  </url>
+  <url>
+    <loc>https://quartopub.com/sites/slimeyturtles/locam/login.html</loc>
+    <lastmod>2023-02-15T19:52:28.418Z</lastmod>
   </url>
 </urlset>
