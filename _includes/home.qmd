@@ -1,0 +1,9 @@
+<table>
+    <tr>
+        <td><a href="/">Home</a></td>
+        <td><a href="/map">Map</a></td>
+        <td><a href="/login">Login</a></td>
+        <td><a href="/friends">Friends</a></td>
+        <td><a href="/newlogin">Friends</a></td>
+    </tr>
+</table>
