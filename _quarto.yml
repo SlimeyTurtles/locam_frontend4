@@ -1,5 +1,20 @@
 project:
+  type: website
   title: "locam_frontend4"
+  output-dir: _output
 
+website:
+  title: "Locam"
+  search: true
+  navbar:
+    left:
+      - href: index.qmd
+        text: home
+      - href: login.qmd
+        text: login
+      - text: "dropdown"
+        menu:
+          - index.qmd
+          - login.qmd
 
 

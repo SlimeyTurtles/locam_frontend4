@@ -1,8 +1,6 @@
 ---
-title: JWT Login
+title: login
 layout: default
-description: A login screen that interacts with Java and obtains a JWT  
-permalink: /login
 ---
 
 <form action="javascript:login_user()">

@@ -1,0 +1,7 @@
+---
+title: index
+layout: default
+---
+
+<p> welcome to locam </p>
+go to the login screen
