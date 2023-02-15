@@ -12,6 +12,8 @@ website:
         text: home
       - href: login.qmd
         text: login
+      - href: map.qmd
+        text: map
       - text: "dropdown"
         menu:
           - index.qmd
