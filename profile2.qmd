@@ -12,8 +12,6 @@ about:
       href: https://github.com
 ---
 
-### This content appears above the formatted about page content.
-
 Jeremy Yipper is a Scientist at Yip Labratories. When not experimenting in his lab, Jeremy enjoys spending time playing video games and eating waffles.
 
 I love sleeping and cuddeling with Dogs

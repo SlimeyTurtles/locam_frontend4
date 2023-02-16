@@ -12,8 +12,6 @@ about:
       href: https://github.com
 ---
 
-### This content appears above the formatted about page content.
-
 David Hopper works in IT for Working Analytics. When not innovating fixing tech, David enjoys spending Juggeling and cooking.
 
 I was a clown once!
