@@ -24,12 +24,6 @@ execute:
   padding: 2px 16px;
 }
 
-.button1 {
-  background-color: white;
-  color: black;
-  border: 2px solid #4CAF50;
-}
-
 </style>
 </head>
 <body>
@@ -41,8 +35,8 @@ execute:
   <div class="container">
     Johnny Mann
     Architect & Engineer
-    <button class="button button1">Add Friend</button>
   </div>
+  <button class="button button1">Add Friend</button>
 </div>
 
 <div></div><div></div>
@@ -52,8 +46,8 @@ execute:
   <div class="container">
     Jenny Notman
     Not an Architect & Engineer
-    <button class="button button1">Add Friend</button>
   </div>
+  <button class="button button1">Add Friend</button>
 </div>
 
 </body>
