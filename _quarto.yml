@@ -11,6 +11,8 @@ website:
     left:
       - href: index.qmd
         text: Home
+      - href: post.qmd
+        text: Post
       - href: login.qmd
         text: Login
       - href: map.qmd
