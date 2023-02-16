@@ -21,7 +21,7 @@ execute:
 
 <script>
     // URL for deployment
-    var url = "https://locam.nighthawkcodingsociety.com"
+     var url = "https://locam.nighthawkcodingsociety.com"
     // Comment out next line for local testing
     // url = "http://localhost:8085"
     // Authenticate endpoint
