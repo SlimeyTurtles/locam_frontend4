@@ -14,8 +14,6 @@ about:
 
 ### This content appears above the formatted about page content.
 
-:::{#hero-heading}
-
 Finley Malloc is the Chief Data Scientist at Wengo Analytics. When not innovating on data platforms, Finley enjoys spending  time unicycling and playing with her pet iguana.
 
 I love eating and biting frogs very much
