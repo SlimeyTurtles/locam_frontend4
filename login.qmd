@@ -1,6 +1,8 @@
 ---
 title: login
 layout: default
+execute:
+    freeze: auto
 ---
 
 <form action="javascript:login_user()">
@@ -56,7 +58,7 @@ layout: default
             }
             // Success!!!
             // Redirect to Database location
-            window.location.href = "/APCSA/data/database";
+            window.location.href = "/map/";
         })
     }
 
