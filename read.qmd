@@ -5,11 +5,12 @@ execute:
     freeze: auto
 ---
 
-<main class="page-content" aria-label="Content">
-      <div class="wrapper">
+
 
 <h2 id="sql-database">SQL Database</h2>
+
 <!-- HTML table fragment for page -->
+
 <table>
   <thead>
   <tr>
@@ -23,15 +24,12 @@ execute:
   </tbody>
 </table>
 
-<!-- Script is layed out in a sequence (no function) and will execute when page is loaded -->
-<script>
-  // prepare HTML result container for new output
-  const resultContainer = document.getElementById("result");
 
-  // prepare URL
-  var url = "https://locam.nighthawkcodingsociety.com/api/person/";
-  // Uncomment next line for localhost testing
-  // url = "http://localhost:8085/api/person/";
+
+<script>
+
+  const resultContainer = document.getElementById("result");
+  var url = "{{< var url.backend >>}}" + "/api/person/";
 
   // set options for cross origin header request
   const options = {
