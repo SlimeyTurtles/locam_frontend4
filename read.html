@@ -200,15 +200,10 @@ Age
 </tbody>
 
 </table>
-<!-- Script is layed out in a sequence (no function) and will execute when page is loaded -->
 <script>
-  // prepare HTML result container for new output
-  const resultContainer = document.getElementById("result");
 
-  // prepare URL
-  var url = "https://locam.nighthawkcodingsociety.com/api/person/";
-  // Uncomment next line for localhost testing
-  // url = "http://localhost:8085/api/person/";
+  const resultContainer = document.getElementById("result");
+  var url = "{{< var url.backend >>}}" + "/api/person/";
 
   // set options for cross origin header request
   const options = {
