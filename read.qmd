@@ -3,11 +3,6 @@ title: read
 layout: default
 ---
 
-<head>    <!-- Page specific head additions -->
-    <title>Person List</title>
-</head>
-
-<!-- <body> -->
 <body>
 <th:block layout:fragment="body" th:remove="tag">
     <div class="container py-4 bg-primary">
@@ -17,10 +12,9 @@ layout: default
                 <span class="fs-4">Database SQL Person</span>
             </a>
         </header>
+<div class="container py-4 text-light bg-success">
 
-        <div class="container py-4 text-light bg-success">
-
-            <h2>Person Viewer</h2>
+<h2>Person Viewer</h2>
             <a th:href="@{/mvc/person/create/}">Create Person</a>
             <div class="row align-items-md-stretch">
                 <table class="table">
@@ -50,8 +44,8 @@ layout: default
                 </table>
             </div>
 
-        </div>
-    </div>
+</div>
+</div>
 
 </th:block>
 </body>
