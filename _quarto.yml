@@ -10,15 +10,15 @@ website:
   navbar:
     left:
       - href: index.qmd
-        text: home
+        text: Home
       - href: login.qmd
-        text: login
+        text: Login
       - href: map.qmd
-        text: map
+        text: Map
       - href: friends.qmd
-        text: friends
+        text: Friends
       - href: read.qmd
-        text: read
+        text: Read
       - text: "dropdown"
         menu:
           - index.qmd

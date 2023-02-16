@@ -1,5 +1,5 @@
 ---
-title: login
+title: Login
 layout: default
 execute:
     freeze: auto
