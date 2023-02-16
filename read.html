@@ -176,6 +176,19 @@ cookieconsent.run({
 
 </header>
 
+<main class="page-content" aria-label="Content">
+<div class="wrapper">
+<pre><code>    &lt;table&gt;
+&lt;tr&gt;
+    &lt;td&gt;&lt;img src="/APCSA//images/logo.png" height="60" title="APIs" alt="" /&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;a href="/APCSA/api/overview"&gt;Overview&lt;/a&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;a href="/APCSA/data/covid"&gt;Covid19 RapidAPI&lt;/a&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;a href="/APCSA/data/jokes"&gt;Jokes API&lt;/a&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;a href="/APCSA/data/login"&gt;JWT Login&lt;/a&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;a href="/APCSA/data/database"&gt;Database CRUD&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;</code></pre>
+
+
 <h2 id="sql-database" class="anchored">
 SQL Database
 </h2>
@@ -200,10 +213,15 @@ Age
 </tbody>
 
 </table>
+<!-- Script is layed out in a sequence (no function) and will execute when page is loaded -->
 <script>
-
+  // prepare HTML result container for new output
   const resultContainer = document.getElementById("result");
-  var url = "https://locam.nighthawkcodingsociety.com" + "/api/person/";
+
+  // prepare URL
+  var url = "https://locam.nighthawkcodingsociety.com/api/person/";
+  // Uncomment next line for localhost testing
+  // url = "http://localhost:8085/api/person/";
 
   // set options for cross origin header request
   const options = {
@@ -266,7 +284,7 @@ Age
 
 
 
-</main> <!-- /main -->
+</div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -515,7 +533,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
-</div> <!-- /content -->
+</main></div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">Team Spiderbiters</div>   
