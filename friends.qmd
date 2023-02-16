@@ -1,6 +1,8 @@
 ---
 title: friends
 layout: default
+execute:
+    freeze: auto
 ---
 
 <style>

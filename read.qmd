@@ -1,6 +1,8 @@
 ---
 title: read
 layout: default
+execute:
+    freeze: auto
 ---
 
 <body>

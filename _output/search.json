@@ -18,7 +18,28 @@
     "href": "index.html",
     "title": "index",
     "section": "",
-    "text": "welcome to locam\n\ngo to the login screen"
+    "text": "Note\n\n\n\nThis project is still in testing"
+  },
+  {
+    "objectID": "profile.html",
+    "href": "profile.html",
+    "title": "Profile Template",
+    "section": "",
+    "text": ":::{#hero-heading}\nFinley Malloc is the Chief Data Scientist at Wengo Analytics. When not innovating on data platforms, Finley enjoys spending time unicycling and playing with her pet iguana.\nI love eating and biting frogs very much"
+  },
+  {
+    "objectID": "profile.html#education",
+    "href": "profile.html#education",
+    "title": "Profile Template",
+    "section": "Education",
+    "text": "Education\nUniversity of California, San Diego | San Diego, CA PhD in Mathematics | Sept 2011 - June 2015\nMacalester College | St. Paul MA B.A in Economics | Sept 2007 - June 2011"
+  },
+  {
+    "objectID": "profile.html#experience",
+    "href": "profile.html#experience",
+    "title": "Profile Template",
+    "section": "Experience",
+    "text": "Experience\nWengo Analytics | Head Data Scientist | April 2018 - present\nGeoScynce | Chief Analyst | Spet 2012 - April 2018"
   },
   {
     "objectID": "login.html",

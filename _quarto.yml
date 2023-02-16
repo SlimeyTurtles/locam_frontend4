@@ -27,6 +27,11 @@ website:
     type: express
     style: interstitial
     palette: light
+  page-footer: 
+    left: "Team Spiderbiters" 
+    right: 
+      - icon: github
+        href: https://github.com/SlimeyTurtles/locam_frontend4
 
 theme:
     light: flatly

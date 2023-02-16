@@ -1,7 +1,10 @@
 ---
 title: index
 layout: default
+execute:
+    freeze: auto
 ---
 
-<p> welcome to locam </p>
-go to the login screen
+::: {.callout-note}
+This project is still in testing
+:::

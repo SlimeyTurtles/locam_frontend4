@@ -1,6 +1,8 @@
 ---
 title: map
 layout: default
+execute:
+    freeze: auto
 ---
 <head>
   <meta charset="UTF-8">
