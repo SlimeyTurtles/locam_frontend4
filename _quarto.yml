@@ -27,7 +27,8 @@ website:
     type: express
     style: interstitial
     palette: light
-  theme:
+
+theme:
     light: flatly
     dark: darkly
 
