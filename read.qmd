@@ -5,6 +5,7 @@ execute:
     freeze: auto
 ---
 
+{}
 <body>
 <th:block layout:fragment="body" th:remove="tag">
     <div class="container py-4 bg-primary">
