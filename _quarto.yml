@@ -1,12 +1,11 @@
 project:
   type: website
-  favicon: images/frog_favicon.jpg
   title: "locam"
-
   output-dir: _output
 
 website:
   title: "Locam"
+  favicon: images/frog_favicon.jpg
   search: true
   navbar:
     left:
@@ -24,5 +23,13 @@ website:
         menu:
           - index.qmd
           - login.qmd
+  cookie-consent:
+    type: express
+    style: interstitial
+    palette: light
+  theme:
+    light: flatly
+    dark: darkly
+
 
 
