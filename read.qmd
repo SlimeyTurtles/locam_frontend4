@@ -3,22 +3,12 @@ title: Read
 layout: default
 execute:
     freeze: auto
+format: html
 ---
-
 ```{html}
-<div class="container py-4 bg-primary">
-        <!-- Page specific body additions -->
-        <header class="pb-3 mb-4 border-bottom">
-            <a href="#" class="d-flex align-items-center text-light text-decoration-none">
-                <span class="fs-4">Database SQL Person</span>
-            </a>
-        </header>
-
-<div class="container py-4 text-light bg-success">
 
 <h2>Person Viewer</h2>
             <a th:href="@{/mvc/person/create/}">Create Person</a>
-            <div class="row align-items-md-stretch">
                 <table class="table">
                     <thead>
                     <tr>
@@ -44,7 +34,4 @@ execute:
                     </tr>
                     </tbody>
                 </table>
-            </div>
-        </div>
-    </div>
 ```
