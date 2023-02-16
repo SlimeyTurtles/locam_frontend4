@@ -1,39 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://SlimeyTurtles.github.io/locam_frontend4/map.html</loc>
-    <lastmod>2023-02-16T20:53:18.820Z</lastmod>
-  </url>
-  <url>
-    <loc>https://SlimeyTurtles.github.io/locam_frontend4/profile2.html</loc>
-    <lastmod>2023-02-16T20:53:19.340Z</lastmod>
-  </url>
-  <url>
-    <loc>https://SlimeyTurtles.github.io/locam_frontend4/profile3.html</loc>
-    <lastmod>2023-02-16T20:53:19.760Z</lastmod>
+    <loc>https://SlimeyTurtles.github.io/locam_frontend4/profile.html</loc>
+    <lastmod>2023-02-16T21:25:55.118Z</lastmod>
   </url>
   <url>
     <loc>https://SlimeyTurtles.github.io/locam_frontend4/read.html</loc>
-    <lastmod>2023-02-16T20:53:20.140Z</lastmod>
+    <lastmod>2023-02-16T21:25:55.510Z</lastmod>
   </url>
   <url>
-    <loc>https://SlimeyTurtles.github.io/locam_frontend4/friends.html</loc>
-    <lastmod>2023-02-16T20:53:20.630Z</lastmod>
+    <loc>https://SlimeyTurtles.github.io/locam_frontend4/map.html</loc>
+    <lastmod>2023-02-16T21:25:56.010Z</lastmod>
   </url>
   <url>
-    <loc>https://SlimeyTurtles.github.io/locam_frontend4/index.html</loc>
-    <lastmod>2023-02-16T20:53:21.050Z</lastmod>
-  </url>
-  <url>
-    <loc>https://SlimeyTurtles.github.io/locam_frontend4/profile.html</loc>
-    <lastmod>2023-02-16T20:53:21.390Z</lastmod>
+    <loc>https://SlimeyTurtles.github.io/locam_frontend4/profile2.html</loc>
+    <lastmod>2023-02-16T21:25:56.490Z</lastmod>
   </url>
   <url>
     <loc>https://SlimeyTurtles.github.io/locam_frontend4/login.html</loc>
-    <lastmod>2023-02-16T20:53:21.720Z</lastmod>
+    <lastmod>2023-02-16T21:25:56.830Z</lastmod>
   </url>
   <url>
-    <loc>https://SlimeyTurtles.github.io/locam_frontend4/post.html</loc>
-    <lastmod>2023-02-16T20:53:22.020Z</lastmod>
+    <loc>https://SlimeyTurtles.github.io/locam_frontend4/index.html</loc>
+    <lastmod>2023-02-16T21:25:57.186Z</lastmod>
+  </url>
+  <url>
+    <loc>https://SlimeyTurtles.github.io/locam_frontend4/friends.html</loc>
+    <lastmod>2023-02-16T21:25:57.502Z</lastmod>
+  </url>
+  <url>
+    <loc>https://SlimeyTurtles.github.io/locam_frontend4/profile3.html</loc>
+    <lastmod>2023-02-16T21:25:57.838Z</lastmod>
   </url>
 </urlset>
