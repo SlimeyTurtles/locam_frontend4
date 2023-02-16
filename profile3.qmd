@@ -12,14 +12,4 @@ about:
       href: https://github.com
 ---
 
-David Hopper works in IT for Working Analytics. When not innovating fixing tech, David enjoys spending Juggeling and cooking.
-
 I was a clown once!
-
-## Education
-Brown High School, San Diego | San Diego, CA
-High School Diploma 2009
-
-## Experience
-Joogie Circus | Circus Clown | April 2011 - January 2014
-Working Analytics | IT/Tech | November 2015 - present

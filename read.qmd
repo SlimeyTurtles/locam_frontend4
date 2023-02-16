@@ -29,7 +29,7 @@ execute:
 <script>
 
   const resultContainer = document.getElementById("result");
-  var url = "{{< var url.backend >>}}" + "/api/person/";
+  var url = "{{< var url.backend >}}" + "/api/person/";
 
   // set options for cross origin header request
   const options = {
