@@ -60,7 +60,7 @@
     "href": "friends.html",
     "title": "Friends",
     "section": "",
-    "text": "Johnny Mann\nArchitect & Engineer\n<button class=\"button button1\">Add Friend</button>\n\n\n\n\n\n\n\n\n\n\n\nJenny Notman\nNot an Architect & Engineer\n<button class=\"button button1\">Add Friend</button>"
+    "text": "Johnny Mann\nArchitect & Engineer\n\nAdd Friend\n\n\n\n\n\n\n\n\n\n\nJenny Notman\nNot an Architect & Engineer\n\nAdd Friend"
   },
   {
     "objectID": "index.html",

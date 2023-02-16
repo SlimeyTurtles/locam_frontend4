@@ -1,0 +1,13 @@
+---
+title: Post
+layout: default
+---
+
+## Post
+
+<html>
+<head></head>
+
+<div class=container>
+    <p>Your images available to post would be here</p>
+</div> 
