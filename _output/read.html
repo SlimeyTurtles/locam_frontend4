@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Locam - Read</title>
+<title>Locam – read</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -155,64 +155,8 @@ cookieconsent.run({
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Read</h1>
-</div>
 
 
-
-<div class="quarto-title-meta">
-
-    
-  
-    
-  </div>
-  
-
-</header>
-
-<pre class="{html}"><code>&lt;div class="container py-4 bg-primary"&gt;
-        &lt;!-- Page specific body additions --&gt;
-        &lt;header class="pb-3 mb-4 border-bottom"&gt;
-            &lt;a href="#" class="d-flex align-items-center text-light text-decoration-none"&gt;
-                &lt;span class="fs-4"&gt;Database SQL Person&lt;/span&gt;
-            &lt;/a&gt;
-        &lt;/header&gt;
-
-&lt;div class="container py-4 text-light bg-success"&gt;
-
-&lt;h2&gt;Person Viewer&lt;/h2&gt;
-            &lt;a th:href="@{/mvc/person/create/}"&gt;Create Person&lt;/a&gt;
-            &lt;div class="row align-items-md-stretch"&gt;
-                &lt;table class="table"&gt;
-                    &lt;thead&gt;
-                    &lt;tr&gt;
-                        &lt;th&gt;ID&lt;/th&gt;
-                        &lt;th&gt;User ID&lt;/th&gt;
-                        &lt;th&gt;Person&lt;/th&gt;
-                        &lt;th&gt;Age&lt;/th&gt;
-                        &lt;th&gt;Action&lt;/th&gt;
-                    &lt;/tr&gt;
-                    &lt;/thead&gt;
-                    &lt;tbody&gt;
-                    &lt;tr th:each="person : ${list}"&gt;
-                        &lt;td th:text="${person.id}"&gt;Person ID&lt;/td&gt;
-                        &lt;td th:text="${person.email}"&gt;Birth Date&lt;/td&gt;
-                        &lt;td th:text="${person.name}"&gt;Name&lt;/td&gt;
-                        &lt;td th:if="${person.getAge() != -1}" th:text="${person.getAge()}"&gt;Age&lt;/td&gt;
-                        &lt;td th:unless="${person.getAge() != -1}" th:text="Unknown"&gt;Unknown Age&lt;/td&gt;
-                        &lt;td&gt;
-                            &lt;!--- &lt;a th:href="@{/mvc/notes/{id}(id = ${person.id})}"&gt;Notes&lt;/a&gt; --&gt;
-                            &lt;a th:href="@{/mvc/person/update/{id}(id = ${person.id})}"&gt;Update&lt;/a&gt;
-                            &lt;a th:href="@{/mvc/person/delete/{id}(id = ${person.id})}"&gt;Delete&lt;/a&gt;
-                        &lt;/td&gt;
-                    &lt;/tr&gt;
-                    &lt;/tbody&gt;
-                &lt;/table&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;</code></pre>
 
 
 
