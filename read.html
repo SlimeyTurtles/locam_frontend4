@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Locam - Read</title>
+<title>Locam – read</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -155,132 +155,12 @@ cookieconsent.run({
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Read</h1>
-</div>
 
 
 
-<div class="quarto-title-meta">
-
-    
-  
-    
-  </div>
-  
-
-</header>
-
-<main class="page-content" aria-label="Content">
-<div class="wrapper">
-<pre><code>    &lt;table&gt;
-&lt;tr&gt;
-    &lt;td&gt;&lt;img src="/APCSA//images/logo.png" height="60" title="APIs" alt="" /&gt;&lt;/td&gt;
-    &lt;td&gt;&lt;a href="/APCSA/api/overview"&gt;Overview&lt;/a&gt;&lt;/td&gt;
-    &lt;td&gt;&lt;a href="/APCSA/data/covid"&gt;Covid19 RapidAPI&lt;/a&gt;&lt;/td&gt;
-    &lt;td&gt;&lt;a href="/APCSA/data/jokes"&gt;Jokes API&lt;/a&gt;&lt;/td&gt;
-    &lt;td&gt;&lt;a href="/APCSA/data/login"&gt;JWT Login&lt;/a&gt;&lt;/td&gt;
-    &lt;td&gt;&lt;a href="/APCSA/data/database"&gt;Database CRUD&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;</code></pre>
 
 
-<h2 id="sql-database" class="anchored">
-SQL Database
-</h2>
-
-<!-- HTML table fragment for page -->
-<table>
-<thead>
-<tr>
-<th>
-Name
-</th>
-<th>
-ID
-</th>
-<th>
-Age
-</th>
-</tr>
-</thead>
-<tbody id="result">
-<!-- javascript generated data -->
-</tbody>
-
-</table>
-<!-- Script is layed out in a sequence (no function) and will execute when page is loaded -->
-<script>
-  // prepare HTML result container for new output
-  const resultContainer = document.getElementById("result");
-
-  // prepare URL
-  var url = "https://locam.nighthawkcodingsociety.com/api/person/";
-  // Uncomment next line for localhost testing
-  // url = "http://localhost:8085/api/person/";
-
-  // set options for cross origin header request
-  const options = {
-    method: 'GET', // *GET, POST, PUT, DELETE, etc.
-    mode: 'cors', // no-cors, *cors, same-origin
-    cache: 'default', // *default, no-cache, reload, force-cache, only-if-cached
-    credentials: 'include', // include, *same-origin, omit
-    headers: {
-      'Content-Type': 'application/json',
-    },
-  };
-
-  // fetch the API
-  fetch(url, options)
-    // response is a RESTful "promise" on any successful fetch
-    .then(response => {
-      // check for response errors and display
-      if (response.status !== 200) {
-          const errorMsg = 'Database response error: ' + response.status;
-          console.log(errorMsg);
-          const tr = document.createElement("tr");
-          const td = document.createElement("td");
-          td.innerHTML = errorMsg;
-          tr.appendChild(td);
-          resultContainer.appendChild(tr);
-          return;
-      }
-      // valid response will contain json data
-      response.json().then(data => {
-          console.log(data);
-          for (const row of data) {
-            // tr and td build out for each row
-            const tr = document.createElement("tr");
-            const name = document.createElement("td");
-            const id = document.createElement("td");
-            const age = document.createElement("td");
-            // data is specific to the API
-            name.innerHTML = row.name; 
-            id.innerHTML = row.email; 
-            age.innerHTML = row.age; 
-            // this build td's into tr
-            tr.appendChild(name);
-            tr.appendChild(id);
-            tr.appendChild(age);
-            // add HTML to container
-            resultContainer.appendChild(tr);
-          }
-      })
-  })
-  // catch fetch errors (ie ACCESS to server blocked)
-  .catch(err => {
-    console.error(err);
-    const tr = document.createElement("tr");
-    const td = document.createElement("td");
-    td.innerHTML = err + ": " + url;
-    tr.appendChild(td);
-    resultContainer.appendChild(tr);
-  });
-</script>
-
-
-
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -529,7 +409,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
-</main></div> <!-- /content -->
+</div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">Team Spiderbiters</div>   
