@@ -2,7 +2,7 @@
 title: "Profile Template 2"
 about:
   template: trestles
-  image: images/cute_dog.jpg
+  image: images/Cute_dog.jpg
   links:
     - icon: twitter
       text: twitter
@@ -11,10 +11,6 @@ about:
       text: Github
       href: https://github.com
 ---
-
-### This content appears above the formatted about page content.
-
-:::{#hero-heading}
 
 Jeremy Yipper is a Scientist at Yip Labratories. When not experimenting in his lab, Jeremy enjoys spending time playing video games and eating waffles.
 
