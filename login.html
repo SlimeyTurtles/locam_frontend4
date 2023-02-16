@@ -190,16 +190,10 @@ Login
 </p>
 </form>
 <script>
-    // URL for deployment
-     var url = "https://locam.nighthawkcodingsociety.com"
-    // Comment out next line for local testing
-    // url = "http://localhost:8085"
-    // Authenticate endpoint
-    const login_url = url + '/authenticate';
 
+    const login_url = "https://locam.nighthawkcodingsociety.com" + '/authenticate';
 
     function login_user(){
-        // Set body to include login data
         const body = {
             email: document.getElementById("uid").value,
             password: document.getElementById("password").value,
@@ -231,7 +225,6 @@ Login
             window.location.href = "read";
         })
     }
-
 
 </script>
 
