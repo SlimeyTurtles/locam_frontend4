@@ -56,6 +56,13 @@
     "text": "<table>\n<tr>\n    <td><img src=\"/APCSA//images/logo.png\" height=\"60\" title=\"APIs\" alt=\"\" /></td>\n    <td><a href=\"/APCSA/api/overview\">Overview</a></td>\n    <td><a href=\"/APCSA/data/covid\">Covid19 RapidAPI</a></td>\n    <td><a href=\"/APCSA/data/jokes\">Jokes API</a></td>\n    <td><a href=\"/APCSA/data/login\">JWT Login</a></td>\n    <td><a href=\"/APCSA/data/database\">Database CRUD</a></td>\n</tr>\n\n\n\nSQL Database\n\n\n\n\n\n\n\nName\n\n\nID\n\n\nAge"
   },
   {
+    "objectID": "friends.html",
+    "href": "friends.html",
+    "title": "Friends",
+    "section": "",
+    "text": "<h4><b>Johnny Mann</b></h4> \n<p>Architect & Engineer</p>"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Index",

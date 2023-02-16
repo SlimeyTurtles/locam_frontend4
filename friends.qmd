@@ -30,7 +30,7 @@ execute:
 <h2></h2>
 
 <div class="card">
-  <img src="dude.webp" alt="Avatar" style="width:100%">
+  <img src="images/dude.webp" alt="Avatar" style="width:100%">
   <div class="container">
     <h4><b>Johnny Mann</b></h4> 
     <p>Architect & Engineer</p> 
