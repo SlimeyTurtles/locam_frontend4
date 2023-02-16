@@ -10,19 +10,20 @@ website:
   navbar:
     left:
       - href: index.qmd
-        text: home
+        text: Home
       - href: login.qmd
-        text: login
+        text: Login
       - href: map.qmd
-        text: map
+        text: Map
       - href: friends.qmd
-        text: friends
+        text: Friends
       - href: read.qmd
-        text: read
-      - text: "dropdown"
+        text: Read
+      - text: "Profile examples"
         menu:
-          - index.qmd
-          - login.qmd
+          - profile.qmd
+          - profile2.qmd
+          - profile3.qmd
   cookie-consent:
     type: express
     style: interstitial

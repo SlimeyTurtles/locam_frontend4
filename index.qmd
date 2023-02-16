@@ -1,10 +1,11 @@
 ---
-title: index
+title: Index
 layout: default
 execute:
     freeze: auto
 ---
 
-::: {.callout-note}
-This project is still in testing
-:::
+# Welcome to Locam
+
+### Locam is a social media platform designed to record the location of posted images. Our site is currently still in progress however if you would like to navigate to our "Map" or "Post" tab you can look into the early testing. 
+

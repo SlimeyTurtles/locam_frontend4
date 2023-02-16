@@ -1,5 +1,5 @@
 ---
-title: "Profile Template 1"
+title: "Profile Template 2"
 about:
   template: trestles
   image: images/frog_favicon.jpg

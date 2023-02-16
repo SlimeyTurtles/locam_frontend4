@@ -1,5 +1,5 @@
 ---
-title: friends
+title: Friends
 layout: default
 execute:
     freeze: auto

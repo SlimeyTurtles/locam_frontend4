@@ -1,5 +1,68 @@
 [
   {
+    "objectID": "map.html",
+    "href": "map.html",
+    "title": "Map",
+    "section": "",
+    "text": "Interactive Map\n\n\n\n\n\n\n\nInteractive Map"
+  },
+  {
+    "objectID": "profile2.html",
+    "href": "profile2.html",
+    "title": "Profile Template",
+    "section": "",
+    "text": ":::{#hero-heading}\nFinley Malloc is the Chief Data Scientist at Wengo Analytics. When not innovating on data platforms, Finley enjoys spending time unicycling and playing with her pet iguana.\nI love eating and biting frogs very much"
+  },
+  {
+    "objectID": "profile2.html#education",
+    "href": "profile2.html#education",
+    "title": "Profile Template",
+    "section": "Education",
+    "text": "Education\nUniversity of California, San Diego | San Diego, CA PhD in Mathematics | Sept 2011 - June 2015\nMacalester College | St. Paul MA B.A in Economics | Sept 2007 - June 2011"
+  },
+  {
+    "objectID": "profile2.html#experience",
+    "href": "profile2.html#experience",
+    "title": "Profile Template",
+    "section": "Experience",
+    "text": "Experience\nWengo Analytics | Head Data Scientist | April 2018 - present\nGeoScynce | Chief Analyst | Spet 2012 - April 2018"
+  },
+  {
+    "objectID": "profile3.html",
+    "href": "profile3.html",
+    "title": "Profile Template",
+    "section": "",
+    "text": ":::{#hero-heading}\nFinley Malloc is the Chief Data Scientist at Wengo Analytics. When not innovating on data platforms, Finley enjoys spending time unicycling and playing with her pet iguana.\nI love eating and biting frogs very much"
+  },
+  {
+    "objectID": "profile3.html#education",
+    "href": "profile3.html#education",
+    "title": "Profile Template",
+    "section": "Education",
+    "text": "Education\nUniversity of California, San Diego | San Diego, CA PhD in Mathematics | Sept 2011 - June 2015\nMacalester College | St. Paul MA B.A in Economics | Sept 2007 - June 2011"
+  },
+  {
+    "objectID": "profile3.html#experience",
+    "href": "profile3.html#experience",
+    "title": "Profile Template",
+    "section": "Experience",
+    "text": "Experience\nWengo Analytics | Head Data Scientist | April 2018 - present\nGeoScynce | Chief Analyst | Spet 2012 - April 2018"
+  },
+  {
+    "objectID": "read.html",
+    "href": "read.html",
+    "title": "Read",
+    "section": "",
+    "text": "<!-- Page specific body additions -->\n    <header class=\"pb-3 mb-4 border-bottom\">\n        <a href=\"#\" class=\"d-flex align-items-center text-light text-decoration-none\">\n            <span class=\"fs-4\">Database SQL Person</span>\n        </a>\n    </header>\n\n\nPerson Viewer\n\n        <a th:href=\"@{/mvc/person/create/}\">Create Person</a>\n        <div class=\"row align-items-md-stretch\">\n            <table class=\"table\">\n                <thead>\n                <tr>\n                    <th>ID</th>\n                    <th>User ID</th>\n                    <th>Person</th>\n                    <th>Age</th>\n                    <th>Action</th>\n                </tr>\n                </thead>\n                <tbody>\n                <tr th:each=\"person : ${list}\">\n                    <td th:text=\"${person.id}\">Person ID</td>\n                    <td th:text=\"${person.email}\">Birth Date</td>\n                    <td th:text=\"${person.name}\">Name</td>\n                    <td th:if=\"${person.getAge() != -1}\" th:text=\"${person.getAge()}\">Age</td>\n                    <td th:unless=\"${person.getAge() != -1}\" th:text=\"Unknown\">Unknown Age</td>\n                    <td>\n                        <!--- <a th:href=\"@{/mvc/notes/{id}(id = ${person.id})}\">Notes</a> -->\n                        <a th:href=\"@{/mvc/person/update/{id}(id = ${person.id})}\">Update</a>\n                        <a th:href=\"@{/mvc/person/delete/{id}(id = ${person.id})}\">Delete</a>\n                    </td>\n                </tr>\n                </tbody>\n            </table>\n        </div>"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Index",
+    "section": "",
+    "text": "Welcome to Locam\n\nLocam is a social media platform designed to record the location of posted images. Our site is currently still in progress however if you would like to navigate to our “Map” or “Post” tab you can look into the early testing."
+  },
+  {
     "objectID": "profile.html",
     "href": "profile.html",
     "title": "Profile Template",
@@ -21,31 +84,10 @@
     "text": "Experience\nWengo Analytics | Head Data Scientist | April 2018 - present\nGeoScynce | Chief Analyst | Spet 2012 - April 2018"
   },
   {
-    "objectID": "read.html",
-    "href": "read.html",
-    "title": "read",
-    "section": "",
-    "text": "<!-- Page specific body additions -->\n    <header class=\"pb-3 mb-4 border-bottom\">\n        <a href=\"#\" class=\"d-flex align-items-center text-light text-decoration-none\">\n            <span class=\"fs-4\">Database SQL Person</span>\n        </a>\n    </header>\n\n\nPerson Viewer\n\n        <a th:href=\"@{/mvc/person/create/}\">Create Person</a>\n        <div class=\"row align-items-md-stretch\">\n            <table class=\"table\">\n                <thead>\n                <tr>\n                    <th>ID</th>\n                    <th>User ID</th>\n                    <th>Person</th>\n                    <th>Age</th>\n                    <th>Action</th>\n                </tr>\n                </thead>\n                <tbody>\n                <tr th:each=\"person : ${list}\">\n                    <td th:text=\"${person.id}\">Person ID</td>\n                    <td th:text=\"${person.email}\">Birth Date</td>\n                    <td th:text=\"${person.name}\">Name</td>\n                    <td th:if=\"${person.getAge() != -1}\" th:text=\"${person.getAge()}\">Age</td>\n                    <td th:unless=\"${person.getAge() != -1}\" th:text=\"Unknown\">Unknown Age</td>\n                    <td>\n                        <!--- <a th:href=\"@{/mvc/notes/{id}(id = ${person.id})}\">Notes</a> -->\n                        <a th:href=\"@{/mvc/person/update/{id}(id = ${person.id})}\">Update</a>\n                        <a th:href=\"@{/mvc/person/delete/{id}(id = ${person.id})}\">Delete</a>\n                    </td>\n                </tr>\n                </tbody>\n            </table>\n        </div>"
-  },
-  {
-    "objectID": "map.html",
-    "href": "map.html",
-    "title": "map",
-    "section": "",
-    "text": "Interactive Map\n\n\n\n\n\n\n\nInteractive Map"
-  },
-  {
     "objectID": "login.html",
     "href": "login.html",
-    "title": "login",
+    "title": "Login",
     "section": "",
     "text": "User ID:  \n\n\n Password:  \n\n\n\nLogin"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "index",
-    "section": "",
-    "text": "Note\n\n\n\nThis project is still in testing"
   }
 ]
