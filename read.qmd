@@ -7,16 +7,6 @@ execute:
 
 <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        <table>
-    <tr>
-        <td><img src="/APCSA//images/logo.png" height="60" title="APIs" alt="" /></td>
-        <td><a href="/APCSA/api/overview">Overview</a></td>
-        <td><a href="/APCSA/data/covid">Covid19 RapidAPI</a></td>
-        <td><a href="/APCSA/data/jokes">Jokes API</a></td>
-        <td><a href="/APCSA/data/login">JWT Login</a></td>
-        <td><a href="/APCSA/data/database">Database CRUD</a></td>
-    </tr>
-</table>
 
 <h2 id="sql-database">SQL Database</h2>
 <!-- HTML table fragment for page -->
