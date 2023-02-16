@@ -19,10 +19,11 @@ website:
         text: Friends
       - href: read.qmd
         text: Read
-      - text: "dropdown"
+      - text: "Profile examples"
         menu:
-          - index.qmd
-          - login.qmd
+          - profile.qmd
+          - profile2.qmd
+          - profile3.qmd
   cookie-consent:
     type: express
     style: interstitial
