@@ -14,6 +14,12 @@ website:
         text: login
       - href: map.qmd
         text: map
+      - href: friends.qmd
+        text: friends
+      - href: read.qmd
+        text: read
+      - href: newLogin.qmd
+        text: new login
       - text: "dropdown"
         menu:
           - index.qmd
