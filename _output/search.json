@@ -25,7 +25,7 @@
     "href": "read.html",
     "title": "Read",
     "section": "",
-    "text": "<div class=\"container py-4 bg-primary\">\n        <!-- Page specific body additions -->\n        <header class=\"pb-3 mb-4 border-bottom\">\n            <a href=\"#\" class=\"d-flex align-items-center text-light text-decoration-none\">\n                <span class=\"fs-4\">Database SQL Person</span>\n            </a>\n        </header>\n\n<div class=\"container py-4 text-light bg-success\">\n\n<h2>Person Viewer</h2>\n            <a th:href=\"@{/mvc/person/create/}\">Create Person</a>\n            <div class=\"row align-items-md-stretch\">\n                <table class=\"table\">\n                    <thead>\n                    <tr>\n                        <th>ID</th>\n                        <th>User ID</th>\n                        <th>Person</th>\n                        <th>Age</th>\n                        <th>Action</th>\n                    </tr>\n                    </thead>\n                    <tbody>\n                    <tr th:each=\"person : ${list}\">\n                        <td th:text=\"${person.id}\">Person ID</td>\n                        <td th:text=\"${person.email}\">Birth Date</td>\n                        <td th:text=\"${person.name}\">Name</td>\n                        <td th:if=\"${person.getAge() != -1}\" th:text=\"${person.getAge()}\">Age</td>\n                        <td th:unless=\"${person.getAge() != -1}\" th:text=\"Unknown\">Unknown Age</td>\n                        <td>\n                            <!--- <a th:href=\"@{/mvc/notes/{id}(id = ${person.id})}\">Notes</a> -->\n                            <a th:href=\"@{/mvc/person/update/{id}(id = ${person.id})}\">Update</a>\n                            <a th:href=\"@{/mvc/person/delete/{id}(id = ${person.id})}\">Delete</a>\n                        </td>\n                    </tr>\n                    </tbody>\n                </table>\n            </div>\n        </div>\n    </div>"
+    "text": "<table>\n<tr>\n    <td><img src=\"/APCSA//images/logo.png\" height=\"60\" title=\"APIs\" alt=\"\" /></td>\n    <td><a href=\"/APCSA/api/overview\">Overview</a></td>\n    <td><a href=\"/APCSA/data/covid\">Covid19 RapidAPI</a></td>\n    <td><a href=\"/APCSA/data/jokes\">Jokes API</a></td>\n    <td><a href=\"/APCSA/data/login\">JWT Login</a></td>\n    <td><a href=\"/APCSA/data/database\">Database CRUD</a></td>\n</tr>\n\n\n\nSQL Database\n\n\n\n\n\n\n\nName\n\n\nID\n\n\nAge"
   },
   {
     "objectID": "map.html",
@@ -39,21 +39,21 @@
     "href": "profile2.html",
     "title": "Profile Template 2",
     "section": "",
-    "text": ":::{#hero-heading}\nFinley Malloc is the Chief Data Scientist at Wengo Analytics. When not innovating on data platforms, Finley enjoys spending time unicycling and playing with her pet iguana.\nI love eating and biting frogs very much"
+    "text": ":::{#hero-heading}\nJeremy Yipper is a Scientist at Yip Labratories. When not experimenting in his lab, Jeremy enjoys spending time playing video games and eating waffles.\nI love sleeping and cuddeling with Dogs"
   },
   {
     "objectID": "profile2.html#education",
     "href": "profile2.html#education",
     "title": "Profile Template 2",
     "section": "Education",
-    "text": "Education\nUniversity of California, San Diego | San Diego, CA PhD in Mathematics | Sept 2011 - June 2015\nMacalester College | St. Paul MA B.A in Economics | Sept 2007 - June 2011"
+    "text": "Education\nSan Diego State University, San Diego | San Diego, CA PhD in Physics | Sept 2011 - June 2015"
   },
   {
     "objectID": "profile2.html#experience",
     "href": "profile2.html#experience",
     "title": "Profile Template 2",
     "section": "Experience",
-    "text": "Experience\nWengo Analytics | Head Data Scientist | April 2018 - present\nGeoScynce | Chief Analyst | Spet 2012 - April 2018"
+    "text": "Experience\nYip Labratories| Lead engineer and physicist | May 2017 - present"
   },
   {
     "objectID": "login.html",
@@ -74,20 +74,20 @@
     "href": "profile3.html",
     "title": "Profile Template 3",
     "section": "",
-    "text": ":::{#hero-heading}\nFinley Malloc is the Chief Data Scientist at Wengo Analytics. When not innovating on data platforms, Finley enjoys spending time unicycling and playing with her pet iguana.\nI love eating and biting frogs very much"
+    "text": ":::{#hero-heading}\nDavid Hopper works in IT for Working Analytics. When not innovating fixing tech, David enjoys spending Juggeling and cooking.\nI was a clown once!"
   },
   {
     "objectID": "profile3.html#education",
     "href": "profile3.html#education",
     "title": "Profile Template 3",
     "section": "Education",
-    "text": "Education\nUniversity of California, San Diego | San Diego, CA PhD in Mathematics | Sept 2011 - June 2015\nMacalester College | St. Paul MA B.A in Economics | Sept 2007 - June 2011"
+    "text": "Education\nBrown High School, San Diego | San Diego, CA High School Diploma 2009"
   },
   {
     "objectID": "profile3.html#experience",
     "href": "profile3.html#experience",
     "title": "Profile Template 3",
     "section": "Experience",
-    "text": "Experience\nWengo Analytics | Head Data Scientist | April 2018 - present\nGeoScynce | Chief Analyst | Spet 2012 - April 2018"
+    "text": "Experience\nJoogie Circus | Circus Clown | April 2011 - January 2014 Working Analytics | IT/Tech | November 2015 - present"
   }
 ]
