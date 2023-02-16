@@ -1,5 +1,61 @@
 [
   {
+    "objectID": "map.html",
+    "href": "map.html",
+    "title": "Map",
+    "section": "",
+    "text": "Interactive Map\n\n\n\n\n\n\n\nInteractive Map"
+  },
+  {
+    "objectID": "profile2.html",
+    "href": "profile2.html",
+    "title": "Profile Template 2",
+    "section": "",
+    "text": ":::{#hero-heading}\nJeremy Yipper is a Scientist at Yip Labratories. When not experimenting in his lab, Jeremy enjoys spending time playing video games and eating waffles.\nI love sleeping and cuddeling with Dogs"
+  },
+  {
+    "objectID": "profile2.html#education",
+    "href": "profile2.html#education",
+    "title": "Profile Template 2",
+    "section": "Education",
+    "text": "Education\nSan Diego State University, San Diego | San Diego, CA PhD in Physics | Sept 2011 - June 2015"
+  },
+  {
+    "objectID": "profile2.html#experience",
+    "href": "profile2.html#experience",
+    "title": "Profile Template 2",
+    "section": "Experience",
+    "text": "Experience\nYip Labratories| Lead engineer and physicist | May 2017 - present"
+  },
+  {
+    "objectID": "profile3.html",
+    "href": "profile3.html",
+    "title": "Profile Template 3",
+    "section": "",
+    "text": ":::{#hero-heading}\nDavid Hopper works in IT for Working Analytics. When not innovating fixing tech, David enjoys spending Juggeling and cooking.\nI was a clown once!"
+  },
+  {
+    "objectID": "profile3.html#education",
+    "href": "profile3.html#education",
+    "title": "Profile Template 3",
+    "section": "Education",
+    "text": "Education\nBrown High School, San Diego | San Diego, CA High School Diploma 2009"
+  },
+  {
+    "objectID": "profile3.html#experience",
+    "href": "profile3.html#experience",
+    "title": "Profile Template 3",
+    "section": "Experience",
+    "text": "Experience\nJoogie Circus | Circus Clown | April 2011 - January 2014 Working Analytics | IT/Tech | November 2015 - present"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Index",
+    "section": "",
+    "text": "Welcome to Locam\n\nLocam is a social media platform designed to record the location of posted images. Our site is currently still in progress however if you would like to navigate to our “Map” or “Post” tab you can look into the early testing."
+  },
+  {
     "objectID": "profile.html",
     "href": "profile.html",
     "title": "Profile Template 1",
