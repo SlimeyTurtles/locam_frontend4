@@ -21,13 +21,6 @@
     "text": "welcome to locam\n\ngo to the login screen"
   },
   {
-    "objectID": "newLogin.html",
-    "href": "newLogin.html",
-    "title": "newLogin",
-    "section": "",
-    "text": "Login\n\n\n\n\n<div class=\"container py-4\">\n    <header class=\"pb-3 mb-4 border-bottom border-primary text-dark\">\n        <span class=\"fs-4\">Login Page</span>\n    </header>\n</div>\n\n<div class=\"container py-4 text-light bg-success\">\n\n    <div class=\"container bg-secondary py-4\">\n        <div class=\"p-5 mb-4 bg-light text-dark rounded-3\">\n            <h1>Login</h1>\n            <label for=\"email\">Username:</label><br>\n            <input type=\"text\" id=\"username\" name=\"username\"><br>\n            <label for=\"password\">Password:</label><br>\n            <input type=\"text\" id=\"password\" name=\"password\"><br><br>\n            <input type=\"submit\" value=\"Login\" onclick=\"login()\">\n            <p id=\"message\"></p>\n        </div>\n    </div>\n\n    <a href=\"http://locam.nighthawkcodingsociety.com:8085/mvc/person/create/\"> Sign up </a>\n\n    <script>\n        function login() {\n            var email = document.getElementById('username').value;\n            var password = document.getElementById('password').value;\n            var data = {email:email, password:password};\n            fetch(\"/authenticate\", {method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify(data)}).then((data) => {\n                if (data.status == 200) {\n                    window.location.replace(\"/mvc/person/read\");\n                } else {\n                    document.getElementById('message').innerHTML = \"Invalid email or password\"\n                }\n            });\n        }\n    </script>\n\n</div>"
-  },
-  {
     "objectID": "login.html",
     "href": "login.html",
     "title": "login",

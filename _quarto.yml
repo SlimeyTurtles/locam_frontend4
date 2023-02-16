@@ -1,6 +1,8 @@
 project:
   type: website
-  title: "locam_frontend4"
+  favicon: images/frog_favicon.jpg
+  title: "locam"
+
   output-dir: _output
 
 website:
