@@ -96,5 +96,12 @@
     "title": "Login",
     "section": "",
     "text": "User ID:  \n\n\n Password:  \n\n\n\nLogin"
+  },
+  {
+    "objectID": "post.html",
+    "href": "post.html",
+    "title": "Post",
+    "section": "",
+    "text": "<p>Your images available to post would be here</p>"
   }
 ]
