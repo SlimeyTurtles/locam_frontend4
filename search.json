@@ -4,21 +4,14 @@
     "href": "profile.html",
     "title": "Profile Template 1",
     "section": "",
-    "text": "Finley Malloc is the Chief Data Scientist at Wengo Analytics. When not innovating on data platforms, Finley enjoys spending time unicycling and playing with her pet iguana.\nI love eating and biting frogs very much"
+    "text": "I love eating and biting frogs very much"
   },
   {
-    "objectID": "profile.html#education",
-    "href": "profile.html#education",
+    "objectID": "profile.html#why",
+    "href": "profile.html#why",
     "title": "Profile Template 1",
-    "section": "Education",
-    "text": "Education\nUniversity of California, San Diego | San Diego, CA PhD in Mathematics | Sept 2011 - June 2015\nMacalester College | St. Paul MA B.A in Economics | Sept 2007 - June 2011"
-  },
-  {
-    "objectID": "profile.html#experience",
-    "href": "profile.html#experience",
-    "title": "Profile Template 1",
-    "section": "Experience",
-    "text": "Experience\nWengo Analytics | Head Data Scientist | April 2018 - present\nGeoScynce | Chief Analyst | Spet 2012 - April 2018"
+    "section": "why?",
+    "text": "why?\nFrogs are the most fruitful resource to our species. They give and create."
   },
   {
     "objectID": "read.html",
@@ -46,21 +39,7 @@
     "href": "profile2.html",
     "title": "Profile Template 2",
     "section": "",
-    "text": "Jeremy Yipper is a Scientist at Yip Labratories. When not experimenting in his lab, Jeremy enjoys spending time playing video games and eating waffles.\nI love sleeping and cuddeling with Dogs"
-  },
-  {
-    "objectID": "profile2.html#education",
-    "href": "profile2.html#education",
-    "title": "Profile Template 2",
-    "section": "Education",
-    "text": "Education\nSan Diego State University, San Diego | San Diego, CA PhD in Physics | Sept 2011 - June 2015"
-  },
-  {
-    "objectID": "profile2.html#experience",
-    "href": "profile2.html#experience",
-    "title": "Profile Template 2",
-    "section": "Experience",
-    "text": "Experience\nYip Labratories| Lead engineer and physicist | May 2017 - present"
+    "text": "I love sleeping and cuddeling with Dogs"
   },
   {
     "objectID": "login.html",
@@ -95,20 +74,6 @@
     "href": "profile3.html",
     "title": "Profile Template 3",
     "section": "",
-    "text": "David Hopper works in IT for Working Analytics. When not innovating fixing tech, David enjoys spending Juggeling and cooking.\nI was a clown once!"
-  },
-  {
-    "objectID": "profile3.html#education",
-    "href": "profile3.html#education",
-    "title": "Profile Template 3",
-    "section": "Education",
-    "text": "Education\nBrown High School, San Diego | San Diego, CA High School Diploma 2009"
-  },
-  {
-    "objectID": "profile3.html#experience",
-    "href": "profile3.html#experience",
-    "title": "Profile Template 3",
-    "section": "Experience",
-    "text": "Experience\nJoogie Circus | Circus Clown | April 2011 - January 2014 Working Analytics | IT/Tech | November 2015 - present"
+    "text": "I was a clown once!"
   }
 ]
