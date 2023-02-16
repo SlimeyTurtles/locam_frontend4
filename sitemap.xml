@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://SlimeyTurtles.github.io/locam_frontend4/profile.html</loc>
-    <lastmod>2023-02-16T17:53:12.857Z</lastmod>
+    <loc>https://SlimeyTurtles.github.io/locam_frontend4/map.html</loc>
+    <lastmod>2023-02-16T18:09:33.823Z</lastmod>
   </url>
   <url>
     <loc>https://SlimeyTurtles.github.io/locam_frontend4/read.html</loc>
-    <lastmod>2023-02-16T17:53:13.237Z</lastmod>
-  </url>
-  <url>
-    <loc>https://SlimeyTurtles.github.io/locam_frontend4/map.html</loc>
-    <lastmod>2023-02-16T17:53:13.565Z</lastmod>
-  </url>
-  <url>
-    <loc>https://SlimeyTurtles.github.io/locam_frontend4/login.html</loc>
-    <lastmod>2023-02-16T17:53:13.929Z</lastmod>
-  </url>
-  <url>
-    <loc>https://SlimeyTurtles.github.io/locam_frontend4/index.html</loc>
-    <lastmod>2023-02-16T17:53:14.253Z</lastmod>
+    <lastmod>2023-02-16T18:09:34.083Z</lastmod>
   </url>
   <url>
     <loc>https://SlimeyTurtles.github.io/locam_frontend4/friends.html</loc>
-    <lastmod>2023-02-16T17:53:14.565Z</lastmod>
+    <lastmod>2023-02-16T18:09:34.333Z</lastmod>
+  </url>
+  <url>
+    <loc>https://SlimeyTurtles.github.io/locam_frontend4/index.html</loc>
+    <lastmod>2023-02-16T18:09:34.583Z</lastmod>
+  </url>
+  <url>
+    <loc>https://SlimeyTurtles.github.io/locam_frontend4/profile.html</loc>
+    <lastmod>2023-02-16T18:09:34.863Z</lastmod>
+  </url>
+  <url>
+    <loc>https://SlimeyTurtles.github.io/locam_frontend4/login.html</loc>
+    <lastmod>2023-02-16T18:09:35.113Z</lastmod>
   </url>
 </urlset>
