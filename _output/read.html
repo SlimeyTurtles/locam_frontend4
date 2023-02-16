@@ -149,11 +149,6 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<!-- Page specific head additions -->
-<pre><code>&lt;title&gt;Person List&lt;/title&gt;</code></pre>
-
-<!-- <body> -->
-
 <th:block layout:fragment="body" th:remove="tag">
 <div class="container py-4 bg-primary">
 <pre><code>    &lt;!-- Page specific body additions --&gt;
@@ -161,12 +156,12 @@ ul.task-list li input[type="checkbox"] {
         &lt;a href="#" class="d-flex align-items-center text-light text-decoration-none"&gt;
             &lt;span class="fs-4"&gt;Database SQL Person&lt;/span&gt;
         &lt;/a&gt;
-    &lt;/header&gt;
-
-    &lt;div class="container py-4 text-light bg-success"&gt;
-
-        &lt;h2&gt;Person Viewer&lt;/h2&gt;
-        &lt;a th:href="@{/mvc/person/create/}"&gt;Create Person&lt;/a&gt;
+    &lt;/header&gt;</code></pre>
+<div class="container py-4 text-light bg-success">
+<h2 class="anchored">
+Person Viewer
+</h2>
+<pre><code>        &lt;a th:href="@{/mvc/person/create/}"&gt;Create Person&lt;/a&gt;
         &lt;div class="row align-items-md-stretch"&gt;
             &lt;table class="table"&gt;
                 &lt;thead&gt;
@@ -193,16 +188,15 @@ ul.task-list li input[type="checkbox"] {
                 &lt;/tr&gt;
                 &lt;/tbody&gt;
             &lt;/table&gt;
-        &lt;/div&gt;
-
-    &lt;/div&gt;
-&lt;/div&gt;</code></pre>
-
-
+        &lt;/div&gt;</code></pre>
+</div>
+</div>
+</th:block>
 
 
 
-</div></th:block></main> <!-- /main -->
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
