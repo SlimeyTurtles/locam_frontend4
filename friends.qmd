@@ -32,10 +32,19 @@ execute:
 <div class="card">
   <img src="images/dude.webp" alt="Avatar" style="width:100%">
   <div class="container">
-    <h4><b>Johnny Mann</b></h4> 
-    <p>Architect & Engineer</p> 
+    Johnny Mann
+    Architect & Engineer
+  </div>
+</div>
+
+<div class="card">
+  <img src="images/notdude.jpg" alt="Avatar1" style="width:100%">
+  <div class="container">
+    Jenny Notman
+    Not an Architect & Engineer
   </div>
 </div>
 
 </body>
 </html> 
+
