@@ -58,7 +58,7 @@ execute:
             }
             // Success!!!
             // Redirect to Database location
-            window.location.href = "locam_frontend4/read";
+            window.location.href = "read";
         })
     }
 
