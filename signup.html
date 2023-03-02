@@ -197,24 +197,16 @@ cookieconsent.run({
 
 <form class="form-inline" action="#" th:action="@{/mvc/person/create}" th:object="${person}" method="POST">
 <div class="form-group mb-2 mr-sm-2">
-<pre><code>&lt;label for="email"&gt;Email:&lt;/label&gt;
-&lt;input type="email" th:field="*{email}" id="email"&gt;
-&lt;small th:if="${#fields.hasErrors('email')}" th:errors="*{email}"&gt;Email Error&lt;/small&gt;</code></pre>
+<p><label for="email">Email:</label> <input type="email" th:field="*{email}" id="email"> <small th:if="${#fields.hasErrors('email')}" th:errors="*{email}">Email Error</small></p>
 </div>
 <div class="form-group mb-2 mr-sm-2">
-<pre><code>&lt;label for="password"&gt;Password:&lt;/label&gt;
-&lt;input type="password" th:field="*{password}" id="password"&gt;
-&lt;small th:if="${#fields.hasErrors('password')}" th:errors="*{password}"&gt;Password Error&lt;/small&gt;</code></pre>
+<p><label for="password">Password:</label> <input type="password" th:field="*{password}" id="password"> <small th:if="${#fields.hasErrors('password')}" th:errors="*{password}">Password Error</small></p>
 </div>
 <div class="input-group mb-2 mr-sm-2">
-<pre><code>&lt;label for="name"&gt;Name:&lt;/label&gt;
-&lt;input type="text" th:field="*{name}" id="name"&gt;
-&lt;small th:if="${#fields.hasErrors('name')}" th:errors="*{name}"&gt;Name Error&lt;/small&gt;</code></pre>
+<p><label for="name">Name:</label> <input type="text" th:field="*{name}" id="name"> <small th:if="${#fields.hasErrors('name')}" th:errors="*{name}">Name Error</small></p>
 </div>
 <div class="input-group mb-2 mr-sm-2">
-<pre><code>&lt;label for="dob"&gt;Birth Date:&lt;/label&gt;
-&lt;input type="date" th:field="*{dob}" id="dob"&gt;
-&lt;small th:if="${#fields.hasErrors('dob')}" th:errors="*{dob}"&gt;Birth Date Error&lt;/small&gt;</code></pre>
+<p><label for="dob">Birth Date:</label> <input type="date" th:field="*{dob}" id="dob"> <small th:if="${#fields.hasErrors('dob')}" th:errors="*{dob}">Birth Date Error</small></p>
 </div>
 <button type="submit" class="btn btn-primary">
 Add

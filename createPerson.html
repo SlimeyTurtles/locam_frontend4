@@ -195,6 +195,7 @@ cookieconsent.run({
 
 </header>
 
+<p><th:block layout:fragment="body" th:remove="tag"></th:block></p>
 <form class="form-inline" action="#" th:action="@{/mvc/person/create}" th:object="${person}" method="POST">
 <div class="form-group mb-2 mr-sm-2">
 <p><label for="email">Email:</label> <input type="email" th:field="*{email}" id="email"> <small th:if="${#fields.hasErrors('email')}" th:errors="*{email}">Email Error</small></p>
@@ -212,6 +213,7 @@ cookieconsent.run({
 Add
 </button>
 </form>
+<p></p>
 
 
 
