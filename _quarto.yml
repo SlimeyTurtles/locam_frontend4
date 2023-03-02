@@ -5,7 +5,7 @@ project:
 
 website:
   title: "Locam"
-  favicon: images/frog_favicon.jpg
+  favicon: images/dude.webp
   search: true
   navbar:
     left:
@@ -13,19 +13,21 @@ website:
         text: Home
       - href: post.qmd
         text: Post
-      - href: login.qmd
-        text: Login
       - href: map.qmd
         text: Map
       - href: friends.qmd
         text: Friends
-      - href: read.qmd
-        text: Read
       - text: "Profile examples"
         menu:
           - profile.qmd
           - profile2.qmd
           - profile3.qmd
+      - text: "Person Demo"
+        menu:
+          - login.qmd
+          - read.qmd
+          - createPerson.qmd
+          - updatePerson.qmd
   cookie-consent:
     type: express
     style: interstitial

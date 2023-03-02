@@ -5,8 +5,6 @@ execute:
     freeze: auto
 ---
 
-
-
 <h2 id="sql-database">SQL Database</h2>
 
 <!-- HTML table fragment for page -->
