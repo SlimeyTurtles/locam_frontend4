@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en" xmlns:layout="http://www.w3.org/1999/xhtml" xmlns:th="http://www.w3.org/1999/xhtml" layout:decorate="~{layouts/base}"><head>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.2.335">
@@ -191,78 +191,58 @@ cookieconsent.run({
 
 </header>
 
-<!-- This page is illustrative and contains ideas about HTML formatting -->
-&lt;!DOCTYPE HTML&gt; <!-- Signals to the Layout Dialect which layout should be used to decorate this View -->
-
-
-<title>
-Person Form
-</title>
-</main></div>
-<!-- <body> -->
-
-<th:block layout:fragment="body" th:remove="tag"> <!-- Page specific body additions -->
-<div class="container">
-
-<pre><code>    &lt;div class="row justify-content-md-center"&gt;
-        &lt;h2&gt;Welcome, Enter the new Persons details&lt;/h2&gt;
-    &lt;/div&gt;
-
-    &lt;div class="row justify-content-md-center"&gt;
-        &lt;div class="col8"&gt;
-            &lt;div class="jumbotron"&gt;
-                &lt;h3&gt;Create Person&lt;/h3&gt;
-                &lt;!-- ThymeLeaf allows person abject of the Class Person to be acted upon by the form
-                     This is known as a “bean-backed form” or "form-backing bean".
-                        th:object - the backend form object (bean object)
-                     There are fields in the Person bean
-                        th:field="*{name}"
-                        th:field="*{age}"
-                        th:field="*{dob}"
-                     Each field has supporting line to show errors in validation
-                        th:errors - form input errors added when validation errors occur
-                     Reference for CRUD
-                        https://www.baeldung.com/spring-boot-crud-thymeleaf
-                     Get started with dialects in 5 minutes
-                        https://www.thymeleaf.org/doc/articles/standarddialect5minutes.html
-                     Reference Bootstrap Form
-                        https://getbootstrap.com/docs/4.0/components/forms/#readonly-plain-text
-                 --&gt;
-                &lt;form class="form-inline" action="#" th:action="@{/mvc/person/create}" th:object="${person}" method="POST"&gt;
-                    &lt;div class="form-group mb-2 mr-sm-2"&gt;
-                        &lt;label for="email"&gt;Email:&lt;/label&gt;
-                        &lt;input type="email" th:field="*{email}" id="email"&gt;
-                        &lt;small th:if="${#fields.hasErrors('email')}" th:errors="*{email}"&gt;Email Error&lt;/small&gt;
-                    &lt;/div&gt;
-                    &lt;div class="form-group mb-2 mr-sm-2"&gt;
-                        &lt;label for="password"&gt;Password:&lt;/label&gt;
-                        &lt;input type="password" th:field="*{password}" id="password"&gt;
-                        &lt;small th:if="${#fields.hasErrors('password')}" th:errors="*{password}"&gt;Password Error&lt;/small&gt;
-                    &lt;/div&gt;
-                    &lt;div class="input-group mb-2 mr-sm-2"&gt;
-                        &lt;label for="name"&gt;Name:&lt;/label&gt;
-                        &lt;input type="text" th:field="*{name}" id="name"&gt;
-                        &lt;small th:if="${#fields.hasErrors('name')}" th:errors="*{name}"&gt;Name Error&lt;/small&gt;
-                    &lt;/div&gt;
-                    &lt;div class="input-group mb-2 mr-sm-2"&gt;
-                        &lt;label for="dob"&gt;Birth Date:&lt;/label&gt;
-                        &lt;input type="date" th:field="*{dob}" id="dob"&gt;
-                        &lt;small th:if="${#fields.hasErrors('dob')}" th:errors="*{dob}"&gt;Birth Date Error&lt;/small&gt;
-                    &lt;/div&gt;
-                    &lt;button type="submit" class="btn btn-primary"&gt;Add&lt;/button&gt;
-                &lt;/form&gt;
-            &lt;/div&gt;
+<h2 class="anchored">
+Welcome, Enter the new Persons details
+</h2>
+<div class="row justify-content-md-center">
+<div class="col8">
+<pre><code>&lt;div class="jumbotron"&gt;
+    &lt;h3&gt;Create Person&lt;/h3&gt;
+    &lt;!-- ThymeLeaf allows person abject of the Class Person to be acted upon by the form
+            This is known as a “bean-backed form” or "form-backing bean".
+            th:object - the backend form object (bean object)
+            There are fields in the Person bean
+            th:field="*{name}"
+            th:field="*{age}"
+            th:field="*{dob}"
+            Each field has supporting line to show errors in validation
+            th:errors - form input errors added when validation errors occur
+            Reference for CRUD
+            https://www.baeldung.com/spring-boot-crud-thymeleaf
+            Get started with dialects in 5 minutes
+            https://www.thymeleaf.org/doc/articles/standarddialect5minutes.html
+            Reference Bootstrap Form
+            https://getbootstrap.com/docs/4.0/components/forms/#readonly-plain-text
+        --&gt;
+    &lt;form class="form-inline" action="#" th:action="@{/mvc/person/create}" th:object="${person}" method="POST"&gt;
+        &lt;div class="form-group mb-2 mr-sm-2"&gt;
+            &lt;label for="email"&gt;Email:&lt;/label&gt;
+            &lt;input type="email" th:field="*{email}" id="email"&gt;
+            &lt;small th:if="${#fields.hasErrors('email')}" th:errors="*{email}"&gt;Email Error&lt;/small&gt;
         &lt;/div&gt;
-    &lt;/div&gt;
-
+        &lt;div class="form-group mb-2 mr-sm-2"&gt;
+            &lt;label for="password"&gt;Password:&lt;/label&gt;
+            &lt;input type="password" th:field="*{password}" id="password"&gt;
+            &lt;small th:if="${#fields.hasErrors('password')}" th:errors="*{password}"&gt;Password Error&lt;/small&gt;
+        &lt;/div&gt;
+        &lt;div class="input-group mb-2 mr-sm-2"&gt;
+            &lt;label for="name"&gt;Name:&lt;/label&gt;
+            &lt;input type="text" th:field="*{name}" id="name"&gt;
+            &lt;small th:if="${#fields.hasErrors('name')}" th:errors="*{name}"&gt;Name Error&lt;/small&gt;
+        &lt;/div&gt;
+        &lt;div class="input-group mb-2 mr-sm-2"&gt;
+            &lt;label for="dob"&gt;Birth Date:&lt;/label&gt;
+            &lt;input type="date" th:field="*{dob}" id="dob"&gt;
+            &lt;small th:if="${#fields.hasErrors('dob')}" th:errors="*{dob}"&gt;Birth Date Error&lt;/small&gt;
+        &lt;/div&gt;
+        &lt;button type="submit" class="btn btn-primary"&gt;Add&lt;/button&gt;
+    &lt;/form&gt;
 &lt;/div&gt;</code></pre>
+</div>
 
 
 
-
-
-
- <!-- /main -->
+</div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -531,4 +511,4 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-</th:block></body></html>
+</body></html>
