@@ -30,7 +30,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./images/frog_favicon.jpg" rel="icon" type="image/jpeg">
+<link href="./images/dude.webp" rel="icon">
 <script src="site_libs/cookie-consent/cookie-consent.js"></script>
 <link href="site_libs/cookie-consent/cookie-consent.css" rel="stylesheet">
 <script src="site_libs/quarto-html/quarto.js"></script>
@@ -190,16 +190,10 @@ Login
 </p>
 </form>
 <script>
-    // URL for deployment
-     var url = "https://locam.nighthawkcodingsociety.com"
-    // Comment out next line for local testing
-    // url = "http://localhost:8085"
-    // Authenticate endpoint
-    const login_url = url + '/authenticate';
 
+    const login_url = "https://locam.nighthawkcodingsociety.com" + '/authenticate';
 
     function login_user(){
-        // Set body to include login data
         const body = {
             email: document.getElementById("uid").value,
             password: document.getElementById("password").value,
@@ -231,7 +225,6 @@ Login
             window.location.href = "read";
         })
     }
-
 
 </script>
 
