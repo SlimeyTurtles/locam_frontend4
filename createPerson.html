@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Locam - CreatePerson</title>
+<title>Locam - Create Person</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -149,11 +149,11 @@ cookieconsent.run({
   </li>  
         <li>
     <a class="dropdown-item" href="./createPerson.html">
- <span class="dropdown-text">CreatePerson</span></a>
+ <span class="dropdown-text">Create Person</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="./updatePerson.html">
- <span class="dropdown-text">UpdatePerson</span></a>
+ <span class="dropdown-text">Update Person</span></a>
   </li>  
     </ul>
   </li>
@@ -176,7 +176,7 @@ cookieconsent.run({
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">CreatePerson</h1>
+<h1 class="title">Create Person</h1>
 </div>
 
 
@@ -191,28 +191,7 @@ cookieconsent.run({
 
 </header>
 
-<h2 class="anchored">
-Welcome, Enter the new Persons details
-</h2>
-<h3 class="anchored">
-Create Person
-</h3>
-<!-- ThymeLeaf allows person abject of the Class Person to be acted upon by the form
-        This is known as a “bean-backed form” or "form-backing bean".
-        th:object - the backend form object (bean object)
-        There are fields in the Person bean
-        th:field="*{name}"
-        th:field="*{age}"
-        th:field="*{dob}"
-        Each field has supporting line to show errors in validation
-        th:errors - form input errors added when validation errors occur
-        Reference for CRUD
-        https://www.baeldung.com/spring-boot-crud-thymeleaf
-        Get started with dialects in 5 minutes
-        https://www.thymeleaf.org/doc/articles/standarddialect5minutes.html
-        Reference Bootstrap Form
-        https://getbootstrap.com/docs/4.0/components/forms/#readonly-plain-text
-    -->
+
 <form class="form-inline" action="#" th:action="@{/mvc/person/create}" th:object="${person}" method="POST">
 <div class="form-group mb-2 mr-sm-2">
 <pre><code>&lt;label for="email"&gt;Email:&lt;/label&gt;
@@ -238,6 +217,7 @@ Create Person
 Add
 </button>
 </form>
+
 
 
 

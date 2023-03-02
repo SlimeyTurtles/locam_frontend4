@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en" xmlns:layout="http://www.w3.org/1999/xhtml" xmlns:th="http://www.w3.org/1999/xhtml" layout:decorate="~{layouts/base}"><head>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.2.335">
@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Locam - UpdatePerson</title>
+<title>Locam - Update Person</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -149,11 +149,11 @@ cookieconsent.run({
   </li>  
         <li>
     <a class="dropdown-item" href="./createPerson.html">
- <span class="dropdown-text">CreatePerson</span></a>
+ <span class="dropdown-text">Create Person</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="./updatePerson.html">
- <span class="dropdown-text">UpdatePerson</span></a>
+ <span class="dropdown-text">Update Person</span></a>
   </li>  
     </ul>
   </li>
@@ -176,7 +176,7 @@ cookieconsent.run({
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">UpdatePerson</h1>
+<h1 class="title">Update Person</h1>
 </div>
 
 
@@ -191,41 +191,9 @@ cookieconsent.run({
 
 </header>
 
-<!-- This page is illustrative and contains ideas about HTML formatting -->
-&lt;!DOCTYPE HTML&gt; <!-- Signals to the Layout Dialect which layout should be used to decorate this View -->
 
-
-<title>
-Person Update
-</title>
-
-
-<th:block layout:fragment="body" th:remove="tag"> <!-- Page specific body additions -->
+<th:block layout:fragment="body" th:remove="tag">
 <div class="container">
-<div class="row justify-content-md-center">
-<h2 class="anchored">
-Welcome, Update The Persons Details
-</h2>
-</div>
-<div class="row justify-content-md-center">
-<div class="col8">
-<div class="jumbotron">
-<!-- ThymeLeaf allows person abject of the Class Person to be acted upon by the form
-This is known as a “bean-backed form” or "form-backing bean".
-th:object - the backend form object (bean object)
-There are two fields in the Person bean,
-th:field="*{name}"
-th:field="*{age}".
-Each field has supporting line for to show errors in validation
-th:errors - form input errors added when validation errors occur
-Reference for CRUD
-https://www.baeldung.com/spring-boot-crud-thymeleaf
-Get started with dialects in 5 minutes
-https://www.thymeleaf.org/doc/articles/standarddialect5minutes.html
-Reference Bootstrap Form
-https://getbootstrap.com/docs/4.0/components/forms/#readonly-plain-text
--->
-<!--Read Only Section -->
 <h3 th:text="'ID: ' + ${person.id}" class="anchored">
 </h3>
 
@@ -265,9 +233,6 @@ No Roles
 Save
 </button>
 </form>
-</div>
-</div>
-</div>
 </div>
 </th:block>
 
