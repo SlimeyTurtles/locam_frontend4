@@ -28,13 +28,6 @@
     "text": "Email:  Email Error\n\n\nPassword:  Password Error\n\n\nName:  Name Error\n\n\nBirth Date:  Birth Date Error\n\n\nAdd"
   },
   {
-    "objectID": "map.html",
-    "href": "map.html",
-    "title": "Map",
-    "section": "",
-    "text": "Interactive Map\n\n\n\n\n\n\n\nInteractive Map"
-  },
-  {
     "objectID": "profile2.html",
     "href": "profile2.html",
     "title": "Profile Template 2",
@@ -54,6 +47,13 @@
     "title": "Update Person",
     "section": "",
     "text": "No Roles\n\n\n\n\n Name \n\n\n\n\n\n\n\n\n   \n\n\n\nEmail:  Email Error\n\n\nPassword:  Password Error\n\n\nName:  Name Error\n\n\nBirth Date:  Birth Date Error\n\n\nSave"
+  },
+  {
+    "objectID": "map/map.html",
+    "href": "map/map.html",
+    "title": "Map",
+    "section": "",
+    "text": "Interactive Map\n\n\n\n\n\n\n\nInteractive Map"
   },
   {
     "objectID": "index.html",
