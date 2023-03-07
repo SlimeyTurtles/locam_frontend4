@@ -1,1 +1,0 @@
-Sitemap: https://SlimeyTurtles.github.io/locam_frontend4/sitemap.xml

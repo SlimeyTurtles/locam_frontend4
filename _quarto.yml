@@ -25,6 +25,7 @@ website:
       - text: "Person Demo"
         menu:
           - login.qmd
+          - signup.qmd
           - read.qmd
           - createPerson.qmd
           - updatePerson.qmd
