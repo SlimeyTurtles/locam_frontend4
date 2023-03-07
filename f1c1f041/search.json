@@ -1,0 +1,93 @@
+[
+  {
+    "objectID": "profile.html",
+    "href": "profile.html",
+    "title": "Profile Template 1",
+    "section": "",
+    "text": "I love eating and biting frogs very much"
+  },
+  {
+    "objectID": "profile.html#why",
+    "href": "profile.html#why",
+    "title": "Profile Template 1",
+    "section": "why?",
+    "text": "why?\nFrogs are the most fruitful resource to our species. They give and create."
+  },
+  {
+    "objectID": "read.html",
+    "href": "read.html",
+    "title": "Read",
+    "section": "",
+    "text": "SQL Database\n\n\n\n\n\n\n\nName\n\n\nID\n\n\nAge"
+  },
+  {
+    "objectID": "signup.html",
+    "href": "signup.html",
+    "title": "Signup",
+    "section": "",
+    "text": "Email:  Email Error\n\n\nPassword:  Password Error\n\n\nName:  Name Error\n\n\nBirth Date:  Birth Date Error\n\n\nAdd"
+  },
+  {
+    "objectID": "map.html",
+    "href": "map.html",
+    "title": "Map",
+    "section": "",
+    "text": "Interactive Map\n\n\n\n\n\n\n\nInteractive Map"
+  },
+  {
+    "objectID": "profile2.html",
+    "href": "profile2.html",
+    "title": "Profile Template 2",
+    "section": "",
+    "text": "I love sleeping and cuddeling with Dogs"
+  },
+  {
+    "objectID": "login.html",
+    "href": "login.html",
+    "title": "Login",
+    "section": "",
+    "text": "User ID:  \n\n\n Password:  \n\n\n\nLogin"
+  },
+  {
+    "objectID": "updatePerson.html",
+    "href": "updatePerson.html",
+    "title": "Update Person",
+    "section": "",
+    "text": "No Roles\n\n\n\n\n Name \n\n\n\n\n\n\n\n\n   \n\n\n\nEmail:  Email Error\n\n\nPassword:  Password Error\n\n\nName:  Name Error\n\n\nBirth Date:  Birth Date Error\n\n\nSave"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Index",
+    "section": "",
+    "text": "Welcome to Locam\n\nLocam is a social media platform designed to record the location of posted images. Our site is currently still in progress however if you would like to navigate to our “Map” or “Post” tab you can look into the early testing."
+  },
+  {
+    "objectID": "createPerson.html",
+    "href": "createPerson.html",
+    "title": "Create Person",
+    "section": "",
+    "text": "Email:  Email Error\n\n\nPassword:  Password Error\n\n\nName:  Name Error\n\n\nBirth Date:  Birth Date Error\n\n\nAdd"
+  },
+  {
+    "objectID": "friends.html",
+    "href": "friends.html",
+    "title": "Friends",
+    "section": "",
+    "text": "Johnny Mann\nArchitect & Engineer\n\nAdd Friend\n\n\n\n\n\n\n\n\n\n\nJenny Notman\nNot an Architect & Engineer\n\nAdd Friend"
+  },
+  {
+    "objectID": "post.html",
+    "href": "post.html",
+    "title": "Post",
+    "section": "",
+    "text": "Images available to post go below"
+  },
+  {
+    "objectID": "profile3.html",
+    "href": "profile3.html",
+    "title": "Profile Template 3",
+    "section": "",
+    "text": "I was a clown once!"
+  }
+]

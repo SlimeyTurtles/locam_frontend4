@@ -1,0 +1,58 @@
+---
+title: Map
+layout: default
+execute:
+    freeze: auto
+---
+<head>
+  <meta charset="UTF-8">
+  <title>Interactive Map</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+  integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+  crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+  integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+  crossorigin=""></script>
+  <style>
+    #map {
+      height: 600px;
+      width: 800px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Interactive Map</h1>
+  <div id="map"></div>
+  <div id="preview"></div>
+  <script>
+    var map = L.map('map').setView([30, 0], 2);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+    
+     // Add markers for famous places
+      var eiffelTower = L.marker([48.8584, 2.2945]).addTo(map);
+      eiffelTower.bindPopup("<b>Eiffel Tower</b><br>Paris, France");
+      
+      var statueOfLiberty = L.marker([40.6892, -74.0445]).addTo(map);
+      statueOfLiberty.bindPopup("<b>Statue of Liberty</b><br>New York City, USA");
+      
+      var greatPyramid = L.marker([29.9792, 31.1342]).addTo(map);
+      greatPyramid.bindPopup("<b>Great Pyramid of Giza</b><br>Giza, Egypt");
+      
+      var tajMahal = L.marker([27.1750, 78.0422]).addTo(map);
+      tajMahal.bindPopup("<b>Taj Mahal</b><br>Agra, India");
+      
+      var colosseum = L.marker([41.8902, 12.4922]).addTo(map);
+      colosseum.bindPopup("<b>Colosseum</b><br>Rome, Italy");
+      
+      var machuPicchu = L.marker([-13.1631, -72.5450]).addTo(map);
+      machuPicchu.bindPopup("<b>Machu Picchu</b><br>Cusco Region, Peru");
+      
+      var angkorWat = L.marker([13.4125, 103.8667]).addTo(map);
+      angkorWat.bindPopup("<b>Angkor Wat</b><br>Siem Reap, Cambodia");
+      
+      var christTheRedeemer = L.marker([-22.9519, -43.2106]).addTo(map);
+      christ
+  </script>
+</body>
