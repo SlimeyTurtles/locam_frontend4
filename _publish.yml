@@ -2,3 +2,9 @@
   quarto-pub:
     - id: 32effbf2-4d20-4617-b2fc-95c79c331046
       url: 'https://quartopub.com/sites/slimeyturtles/locam_frontend4'
+- source: project
+  quarto-pub:
+    - id: 46febf13-6eb0-46fb-831d-de5957ec6564
+      url: 'https://quartopub.com/sites/slimeyturtles/slimeyturtles'
+    - id: ae8dfefd-5202-480e-9eaf-8d90ae2d01e6
+      url: 'https://quartopub.com/sites/slimeyturtles/locam_frontend4'
