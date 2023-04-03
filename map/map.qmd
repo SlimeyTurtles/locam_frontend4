@@ -24,6 +24,7 @@ execute:
   <h1>Interactive Map</h1>
   <div id="map"></div>
   <div id="preview"></div>
+
   <script>
     var map = L.map('map').setView([30, 0], 2);
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -55,4 +56,7 @@ execute:
       var christTheRedeemer = L.marker([-22.9519, -43.2106]).addTo(map);
       christ
   </script>
+
+<!-- pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" put it in later  -->
+  <input id="x" name="x" placeholder="Input x coordinantes">
 </body>
