@@ -1,1 +1,1 @@
-Sitemap: https://ae8dfefd-5202-480e-9eaf-8d90ae2d01e6.netlify.app/sitemap.xml
+Sitemap: https://quartopub.com/sites/slimeyturtles/locam_frontend4/sitemap.xml

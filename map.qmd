@@ -1,4 +1,4 @@
----
+<!-- ---
 title: Map
 layout: default
 execute:
@@ -57,6 +57,6 @@ execute:
       christ
   </script>
 
-<!-- pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" put it in later  -->
+<!-- pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" put it in later
   <input id="x" name="x" placeholder="Input x coordinantes">
-</body>
+</body> -->
